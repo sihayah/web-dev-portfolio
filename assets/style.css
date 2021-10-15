@@ -3,6 +3,8 @@
 }
 * {
     font-family: helvetica, arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 a {
     color: #000000;
@@ -28,12 +30,14 @@ header ul {
     display: block;
     line-height: 1.5;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 11vw;
+    font-size: 13vw;
 }
 nav {
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 80vw;
+    padding: 3vw;
+    margin-bottom: 7vw;
 }
 .intro {
     display: flex;
@@ -45,8 +49,8 @@ nav {
 }
 .headshot {
     display: block;
-    height: 30vw;
-    width: aut;
+    height: auto;
+    width: 50vw;
     opacity: 50%;
     border-radius: 25% 25% 25% 0;
 }
@@ -62,6 +66,10 @@ h1, p{
 
 media queries
 
-@media screen and (max-width: 575px) {
-
+@media screen and (min-width: 768) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    
 }
