@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sihaya Harris - web development</title>
     <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    
 </head>
 <body>
     <!-- Header -->
     <header>
+
+        <img src="assets/images/headshot.JPEG" class="headshot" alt=""/>
+
+        <div class="intro">
+            <h1>s i h a y a H a r r i s</h1>
+            <p>web developer </p>
+        </div>
         <!-- Navigation -->
         <div>
             <nav>
@@ -21,79 +28,81 @@
             </ul>
             </nav>
         </div>
-            <div class="intro">
-                <img src="assets/images/headshot.JPEG" class="headshot"/>
-                <h1>s i h a y a H a r r i s</h1>
-                <p>Web developer</p>
-            </div>
         </header>     
-
-    <!-- supplementary links -->
-    <section class="supplementarylinks">
-        <ul>
-            <li>--github--</li>
-            <li>--linkedIn--</li>
-            <li>--insta--</li>
-        </ul>
-    </section>
  
 
 
+<!-- All Sections wrapper -->
+<div class="allsect">
+    <!-- "Work Section" -->
+    <section class="worksection">   
+        <h2 id= "work">
+            <br>
+            WORK</h2>
 
-    <br><br><br><br><br><br><br><br>
 
-<!-- "Work Section" -->
-<div class="worksection">   
-    <h2 id= "work">WORK</h2>
+            <article>
+           
+                <div>
+                    <a href="https://chaosritual.com/>">
+                    <img src="assets/images/chaos-ritual-landing.png" class="hero" alt="chaos ritual landing page"> 
+                    </a>
+                </div>
+                <h3>Chaos Ritual</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro earum aut deleniti ipsam perferendis distinctio voluptatibus dolorem laboriosam et, iusto officiis ducimus dolor illum quisquam perspiciatis alias. Exercitationem, architecto!</p>
+            </article>
+
+            <article>
+              
+                <div>
+                    <a href="https://sihayah.github.io/robot-gladiators/">
+                        <img src="assets/images/robot-gladiators-landing.png" class="work" alt="robot gladiators landing page">
+                    </a>
+                </div>
+                <h3>Robot Gladiators</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi est pariatur vitae distinctio officiis, eaque qui quibusdam fugiat voluptates eos cupiditate ducimus autem veniam! Tenetur doloribus laboriosam voluptatum id!</p>
+            </article>
+
+            <article>
+              
+                <div>
+                    <a href="https://sihayah.github.io/Run-Buddy/">
+                        <img src="assets/images/run-buddy-landing.png" class="work" alt="run buddy landing page">
+                    </a>
+                </div>
+                <h3>Run-Buddy</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis possimus saepe corrupti explicabo nemo consequuntur voluptates id, minus similique velit, voluptate culpa nulla reprehenderit facere inventore expedita debitis vitae omnis.</p>
+            </article>
 
 
-        <section>
-             <h3>---chaosRitual</h3>
-             <div>
-                <img src="assets/images/chaos-ritual-landing.png" class="hero">
-            </div>
+        </div>
+
+        <!-- About section -->
+        <section id="about" class="about">
+            <h2>
+                <br>ABOUT
+            </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolores ex assumenda harum nesciunt explicabo dolorum quam doloribus numquam asperiores iusto vero pariatur ducimus iure, voluptas natus veritatis iste ut?</p>
         </section>
+        <!-- Contact section -->
+        <section id="contact" class="contact"> 
+            <h2><br>CONTACT ME</h2>
+            <div class="contact-form">
+            
+                <form>
+                <label for="contact-name">Your name</label>
+                <input type="text" id="contact-name" placeholder="Your name"/>
+                <label for="email">Your Email</label>
+                <input type="email" id="contact-name" placeholder="Email address"/>
 
-        <section>
-            <h3>---robotGladiators</h3>
-            <div>
-                <img src="assets/images/robot-gladiators-landing.png" class="work">
-            </div>
-        </section>
+                <label for="contact-message">Message</label>
+                <input type="text" id="contact-message" placeholder="Message"/>
 
-        <section>
-            <h3>---runBuddy</h3>
-            <div>
-                <img src="assets/images/run-buddy-landing.png" class="work">
-            </div>
-
-        </section>
-
-
-    </div>
-
-    <!-- About section -->
-    <section id="about">
-        <h2>--about--</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolores ex assumenda harum nesciunt explicabo dolorum quam doloribus numquam asperiores iusto vero pariatur ducimus iure, voluptas natus veritatis iste ut?</p>
-    </section>
-    <!-- Contact section -->
-    <section id="contact"> 
-        <h2>CONTACT ME</h2>
-        <div class="contact-form">
-        
-            <form>
-              <label for="contact-name">Your name</label>
-              <input type="text" id="contact-name" placeholder="Your name"/>
-
-              <label for="contact-message">Message</label>
-              <input type="text" id="contact-message" placeholder="Message"/>
-
-              <button type="submit">Submit</button>
-            </form>
-          </div> 
-        </section>
-
+                <button type="submit">Submit</button>
+                </form>
+            </div> 
+            </section>
+</div>
 
         <!-- footer -->
         <footer> 
