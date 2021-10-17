@@ -27,6 +27,10 @@ body {
     right: 0;
 
 }
+@font-face {
+    font-family: 'gretoonhighlight';
+    src: url("fonts/gretoonhighlight.ttf");
+}
 
 /* header styles */
 
@@ -36,9 +40,11 @@ header {
 header ul {
     display: block;
     line-height: 1.75;
+    padding: 0 20px 0 20px;
 }
 header ul li {
     opacity: 80%;
+    padding: 10%;
 }
 header ul li:hover {
     opacity: 100%;
@@ -50,15 +56,27 @@ nav {
     display: flex;
     flex-direction: column;
 }
+h1 {
+    font-family: gretoonhighlight;
+    font-size: 48px;
+}
+
 .intro p {
     font-style: italic;
+    padding: 10px;
 }
 .headshot {   
     opacity: 50%;
     border-radius: 25% 25% 25% 0;
-    width: 50%;
+    width: 60%;
     height: auto;
-    transform: scaleX(-1);
+    transform: scaleX(-1); 
+}
+.sidebarcartoon {
+    transform: scaleX(-1); 
+    padding-top: 100px;
+    width: 80%;
+    opacity: 75%;
 }
 
 /* sections styles */
@@ -70,44 +88,72 @@ nav {
 }
 h2{
     text-align: center;
-    color: #ffffff;
-    font-size: 36px;
+    color: rgb(48, 48, 48);
+    font-size: 48px;
     padding-top: 50px;
+    font-family: gretoonhighlight;
+}
+ }
 }
 
 /* work section styles */
 
-h3 {
-    font-weight: lighter;
-    font-size: 24px;
-    color: var(--themecolor);
-    margin-top: 20px;
-
-}
 .worksection {
-    background-color: rgb(237, 237, 237);
-    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
 }
 .worksection article {
-    padding: 15% 8% 15% 8%;
+    padding: 7%;
 }
-.hero {
-    width: 90%;
-    max-width: 900px;
-    height: auto;
+.worksection p {
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 18px;
 }
 .work {
-
-    width: 60%;
-    max-width: 750px;
-    height: auto;    
+    display: block;
+    width: 80%;
+    height: auto;
+    opacity: 50%;
+    border-radius: 25px;
 }
+#hero {
+    width: 100%;
+    height: auto;
+}
+
+.common {
+    position: relative;
+}
+.work:hover {
+    opacity: 100%;
+}
+span {
+    position: absolute;
+    width: 101%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left:10px;
+    text-align: left;
+    overflow: hidden;
+    transition: .5s ease;
+    color: rgb(0, 0, 0);
+}
+
+article .common:hover span{
+   height: 10%;
+}
+
 
 /* later section headings */
 
 .contact h2, .about h2 {
     color: rgb(171, 171, 171);
-    
+}
+.about p {
+    padding-top: 30px;
 }
 
 /* contact section */
@@ -193,12 +239,19 @@ h3 {
     body {
         margin: 0 20px 0 20px;
     }
+    h1 {
+        font-size: 40px;
+    }
     header {
         text-align: right;
         margin: 0 -100px 20px 0;
     }
     .sidebar {
         position: relative;
+    }
+    .sidebarcartoon {
+        width: 20%;
+        padding: 0 0 50px 0;
     }
     .allsect {
         margin: auto;
