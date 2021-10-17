@@ -93,8 +93,7 @@ h2{
     padding-top: 50px;
     font-family: gretoonhighlight;
 }
- }
-}
+ 
 
 /* work section styles */
 
@@ -112,16 +111,25 @@ h2{
 }
 .work {
     display: block;
-    width: 80%;
+    width: 100%;
     height: auto;
     opacity: 50%;
     border-radius: 25px;
 }
-#hero {
-    width: 100%;
-    height: auto;
+.worksectioncontainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: auto;
 }
-
+.item2, .item3 {
+    display:flex;
+}
+.item2 {
+    flex-direction: row-reverse;
+}
 .common {
     position: relative;
 }
@@ -264,6 +272,9 @@ article .common:hover span{
     }
     article p {
         font-size: 18px;
+    }
+    article {
+        text-align: center;
     }
 }
 /* REACH OUT STYLES END */
