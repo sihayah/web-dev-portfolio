@@ -21,20 +21,21 @@ body {
 }
 .sidebar {
     position: fixed;
-    width: 240px;
+    width: 220px;
     z-index: 9999;
-    padding-top: 50px;
-    overflow-x: hidden;
-    transition: 0.5s;
+    padding: 50px 20px 0 0;
     right: 0;
 
 }
 
 /* header styles */
 
+header {
+    text-align: right;
+}
 header ul {
     display: block;
-    line-height: 1.5;
+    line-height: 1.75;
 }
 header ul li {
     opacity: 80%;
@@ -63,14 +64,13 @@ nav {
 /* sections styles */
 
 .allsect {
-    margin: 0 240px 0 5px;
+    margin: 0 210px 0 5px;
     text-align: center;
     position: relative;
 }
 h2{
     text-align: center;
     color: #ffffff;
-    margin-right: 10px;
     font-size: 36px;
     padding-top: 50px;
 }
@@ -86,6 +86,7 @@ h3 {
 }
 .worksection {
     background-color: rgb(237, 237, 237);
+    border-radius: 25px;
 }
 .worksection article {
     padding: 15% 8% 15% 8%;
@@ -144,7 +145,7 @@ h3 {
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
-    color: #ffffff;
+    color: rgba(255,255,255, 1);
   }
   .contact-form input, .contact-form textarea {
       border: none;
@@ -186,27 +187,21 @@ h3 {
       justify-content: space-around;
   }
 
-/*  MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    .intro h1 {
-        font-size: 24px;
-    }
-  }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 600px) {
     body {
         margin: 0 20px 0 20px;
     }
-    .headshot {
-        width: 50%;
-        height: auto;
+    header {
+        text-align: right;
+        margin: 0 -100px 20px 0;
     }
     .sidebar {
         position: relative;
     }
     .allsect {
-        margin-right: auto;
+        margin: auto;
     }
     form {
         font-size: 14px;
