@@ -5,6 +5,7 @@
 }
 * {
     font-family: helvetica, arial, sans-serif;
+    font-size: 24px;
     margin: 0;
     padding: 0;
 }
@@ -18,69 +19,61 @@ a:hover {
 body {
     margin: 0 50px 0 50px;
 }
+.sidebar {
+    position: fixed;
+    width: 240px;
+    z-index: 9999;
+    padding-top: 50px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    right: 0;
 
+}
 
 /* header styles */
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
-}
 header ul {
     display: block;
     line-height: 1.5;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 24px;
 }
 header ul li {
     opacity: 80%;
-    font-size: 24px;
 }
 header ul li:hover {
     opacity: 100%;
 }
 ul {
     list-style-type: none;
-    display: flex;
-    justify-content: space-around;
 }
 nav {
     display: flex;
     flex-direction: column;
-
 }
 .intro p {
     font-style: italic;
-    font-size: 24px;
-}
-.intro h1 {
-    font-size: 64px;
 }
 .headshot {   
-    display: block;
-    opacity: 25%;
+    opacity: 50%;
     border-radius: 25% 25% 25% 0;
-    width: 25%;
+    width: 50%;
     height: auto;
     transform: scaleX(-1);
 }
 
 /* sections styles */
-p {
-    font-size: 24px;
-}
+
 .allsect {
-    margin: 10% 0 0 0;
+    margin: 0 240px 0 5px;
     text-align: center;
+    position: relative;
 }
 h2{
     text-align: center;
     color: #ffffff;
-    margin: 0 0 10px 0;
+    margin-right: 10px;
+    font-size: 36px;
+    padding-top: 50px;
 }
-
 
 /* work section styles */
 
@@ -93,24 +86,23 @@ h3 {
 }
 .worksection {
     background-color: rgb(237, 237, 237);
-    
 }
-
 .worksection article {
-    padding: 10% 0 15% 0;
+    padding: 15% 8% 15% 8%;
 }
 .hero {
     width: 90%;
+    max-width: 900px;
     height: auto;
 }
 .work {
 
     width: 60%;
+    max-width: 750px;
     height: auto;    
-    margin-top: 10px;
 }
 
-/* about section */
+/* later section headings */
 
 .contact h2, .about h2 {
     color: rgb(171, 171, 171);
@@ -120,7 +112,6 @@ h3 {
 /* contact section */
 .contact {
     height: auto;
-    justify-content: center;
 }
 .contact-form h2 {
     color: rgb(182, 94, 67);
@@ -138,10 +129,6 @@ h3 {
     padding: 3vw;
 }
 
-.contact-info div {
-    color: white;
-  }
-  
   .contact-info {
       display: flex;
       justify-content: space-between;
@@ -189,22 +176,37 @@ h3 {
   }
   .contact-form button:hover {
       color: rgb(182, 94, 67);
-      background: beige;
+      background: rgb(245,245,220);
   }
 
+/* footer styles */
+  .theend ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
 
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media (max-width: 675px) {
-    body {
-        margin: 0 20px 0 20px;
-    }
+/*  MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
     .intro h1 {
         font-size: 24px;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 600px) {
+    body {
+        margin: 0 20px 0 20px;
     }
     .headshot {
         width: 50%;
         height: auto;
+    }
+    .sidebar {
+        position: relative;
+    }
+    .allsect {
+        margin-right: auto;
     }
     form {
         font-size: 14px;
@@ -215,8 +217,5 @@ h3 {
     article p {
         font-size: 18px;
     }
-      }
-   
-
-  }
+}
 /* REACH OUT STYLES END */
