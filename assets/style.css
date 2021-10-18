@@ -29,7 +29,7 @@ body {
 }
 @font-face {
     font-family: 'gretoonhighlight';
-    src: url("fonts/toonhighlight.ttf");
+    src: url("fonts/toon/toonhighlight.woff");
 }
 
 /* header styles */
@@ -147,7 +147,6 @@ span {
     text-align: left;
     overflow: hidden;
     transition: .5s ease;
-    color: rgb(0, 0, 0);
 }
 
 article .common:hover span{
@@ -256,6 +255,7 @@ article .common:hover span{
     }
     .sidebar {
         position: relative;
+        width: auto;
     }
     .sidebarcartoon {
         width: 20%;
@@ -275,6 +275,9 @@ article .common:hover span{
     }
     article {
         text-align: center;
+    }
+    span {
+        background-color: rgba(255,255,255, 1);
     }
 }
 /* REACH OUT STYLES END */
