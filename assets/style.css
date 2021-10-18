@@ -255,7 +255,8 @@ article .common:hover span{
     }
     .sidebar {
         position: relative;
-        width: auto;
+        width: 240px;
+        text-align: center;
     }
     .sidebarcartoon {
         width: 20%;
