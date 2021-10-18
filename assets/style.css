@@ -145,9 +145,11 @@ span {
     bottom: 0;
     left: 0;
     right: 0;
+    margin-bottom: 10px;
     padding-left:10px;
     text-align: left;
-    overflow: hidden;
+    height: auto;
+    overflow:hidden;
     transition: .5s ease;
 }
 
