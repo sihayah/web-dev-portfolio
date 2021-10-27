@@ -85,7 +85,7 @@ h1 {
 
 .allsect {
     margin: 0 210px 0 5px;
-    text-align: center;
+    text-align: left;
     position: relative;
 }
 h2{
@@ -94,6 +94,9 @@ h2{
     font-size: 48px;
     padding-top: 50px;
     font-family: gretoonhighlight;
+}
+.caption {
+    padding-top: 3px;
 }
  
 
@@ -118,44 +121,25 @@ h2{
     opacity: 50%;
     border-radius: 25px;
 }
+
 .worksectioncontainer {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     flex-wrap: wrap;
     align-items: center;
     flex: auto;
+    width: 55vw;
 }
-.item2, .item3 {
-    display:flex;
+
+#hero {
+    width: 120%;
 }
-.item2 {
-    flex-direction: row-reverse;
-}
-.common {
-    position: relative;
-}
+
+
 .work:hover {
     opacity: 100%;
 }
-span {
-    position: absolute;
-    width: 101%;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 10px;
-    padding-left:10px;
-    text-align: left;
-    height: auto;
-    overflow:hidden;
-    transition: .5s ease;
-}
 
-article .common:hover span{
-   height: 10%;
-}
 
 
 /* later section headings */
