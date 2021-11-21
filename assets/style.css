@@ -17,15 +17,18 @@ a:hover {
     font-style: italic;
 }
 body {
-    margin: 0 50px 0 50px;
+    margin: 0 2vh 0 2vh;
 }
 .sidebar {
     position: fixed;
     width: 220px;
     z-index: 9999;
-    padding: 50px 20px 0 0;
+    padding: 10vh 6vh 0 0;
     right: 0;
 
+}
+.sidebar h1 {
+    line-height: 1.2;
 }
 @font-face {
     font-family: 'gretoonhighlight';
@@ -83,17 +86,21 @@ h1 {
 
 /* sections styles */
 
-.allsect {
-    margin: 0 210px 0 5px;
+.all-left {
     text-align: left;
     position: relative;
+    width: 60%;
+    margin-left: 3vh;
 }
 h2{
     text-align: center;
+    border-bottom: 3px solid #000000;
+    border-left: 3px solid #000000;
     color: rgb(48, 48, 48);
     font-size: 48px;
-    padding-top: 50px;
+    padding-top: 5vh;
     font-family: gretoonhighlight;
+    padding-left: 15vh;
 }
 .caption {
     padding-top: 3px;
@@ -114,6 +121,9 @@ h2{
     border-radius: 25px;
     font-size: 18px;
 }
+#work {
+    padding-top: 22vh;
+}
 .work {
     display: block;
     width: 100%;
@@ -123,12 +133,12 @@ h2{
 }
 
 .worksectioncontainer {
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     flex: auto;
-    width: 55vw;
 }
 
 #hero {
@@ -145,15 +155,18 @@ h2{
 /* later section headings */
 
 .contact h2, .about h2 {
-    color: rgb(171, 171, 171);
+    opacity: 50%;
 }
 .about p {
-    padding-top: 30px;
+    padding: 5vh 0;
+    font-size: .75em;
 }
+
 
 /* contact section */
 .contact {
     height: auto;
+    width: 90%;
 }
 .contact-form h2 {
     color: rgb(182, 94, 67);
@@ -219,6 +232,10 @@ h2{
   .contact-form button:hover {
       color: rgb(182, 94, 67);
       background: rgb(245,245,220);
+  }
+  .contact h2 {
+      font-size: 1.5em;
+      text-align: center;
   }
 
 /* footer styles */
