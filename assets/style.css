@@ -23,16 +23,14 @@ body {
 }
 .sidebar {
     position: fixed;
-    width: 25%;
-    min-width: 35vh;
     padding: 10vh 6vh 0 0;
     right: 0;
-    border-left: 1px dotted #000000;
+    border-left: 1px dotted var(--off-white);
 
 }
 .sidebar h1 {
     line-height: 1.2;
-    color: var(--theme-shadow);
+    color: var(--theme-red);
 }
 @font-face {
     font-family: 'gretoonhighlight';
@@ -50,34 +48,46 @@ header ul {
     line-height: 1.75;
     padding: 0 3vh 0 3vh;
 }
-ul {
+.nav-list {
     list-style-type: none;
+    text-align: center;
+    
 }
 .nav-list li {
     border-radius: 2vh;
-    margin: 1.5vh;
-    opacity: 80%;
+    border: 1px solid var(--off-white);
     background-color: var(--off-white);
-    box-shadow: 2px 2px var(--theme-gold);
+    opacity: 80%;
+    padding: 1.5vh;
+    margin-bottom: 1vh;
 }
 .nav-list li:hover {
     font-style: italic;
     opacity: 100%;
+}
+.nav-list a {
+    font-family: 'gretoonhighlight';
+    color: #fff;
+
 }
 nav {
     display: flex;
     flex-direction: column;
 }
 h1 {
-    font-size: 3vh;
+    font-size: 4vh;
 }
 .hiddenbreak {
     display: none;
 }
 .intro p {
     font-style: italic;
-    color: var(--theme-gold);
-    padding: 10px;
+    font-size: 3vh;
+    opacity: 75%;
+}
+.surname {
+    color: var(--theme-shadow);
+    font-style: bold;
 }
 .headshot {   
     opacity: 75%;
@@ -89,24 +99,26 @@ h1 {
 .all-left {
     text-align: center;
     position: relative;
-    width: 60%;
     margin-left: 3vh;
 }
 h2{
     text-align: right;
     border-bottom: 3px solid var(--off-white);
     border-left: 3px solid var(--off-white);
+    border-radius: 2vh;
     color: var(--off-white);
-    font-size: 48px;
+    font-size: 5vh;
     padding: 1vh 0 2vh 15vh;
     font-family: gretoonhighlight;
     text-shadow: 1px 1px #cab8b8;
 }
 .caption {
-    padding-top: 3px;
+    padding-top: 1vh;
     font-size: 2vh;
 }
- 
+.main-content-wrapper {
+    width: 90%;
+}
 
 /* work section styles */
 
@@ -115,9 +127,9 @@ h2{
     flex-direction: column;
 }
 .worksection article {
-    padding: 1vh;
+    padding: 3vh;
     border: 1px solid var(--off-white);
-    width: 30vh;
+    width: 25vh;
     margin: 1vh;
     border-radius: 4vh;
     align-self: center;
@@ -128,7 +140,6 @@ h2{
 .work {
     width: 100%;
     opacity: 50%;
-    border-radius: 25px;
 }
 
 .worksectioncontainer {
