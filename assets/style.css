@@ -40,7 +40,7 @@ header {
     flex-direction: column;
 }
 .avatar {
-    max-width: 32vh;
+    max-width: 28vh;
     align-self: center;
 }
 header ul {
