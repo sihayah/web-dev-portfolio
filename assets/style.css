@@ -97,6 +97,7 @@ h1 {
     font-style: bold;
     font-size: 4.5vh;
     letter-spacing: 1.5vh;
+    padding-left: 2vh;
 }
 
 /* sections styles */
@@ -226,8 +227,14 @@ h2{
         width: auto;
         padding: 0;
     }
+    .surname {
+        padding-left: 1.5vh;
+    }
     .avatar {
         max-width: 25vh;
+    }
+    .intro p {
+        padding-right: 8vh;
     }
     .border-placeholder-div {
         width: 40vh;
