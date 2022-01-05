@@ -4,243 +4,264 @@
     --theme-shadow: #540b0e;
     --theme-gold: #e09f3e;
     --theme-blue: #335c67;
-    --off-white: #ebe6e1
+    --off-white: #ebe6e1;
 
 }
 * {
     font-size: 2.5vh;
     margin: 0;
     padding: 0;
-    font-family:  sans-serif, Helvetica, Arial, sans-serif
+    font-family:  sans-serif, Helvetica, Arial, sans-serif;
+    list-style: none;
 }
 a {
-    color: var(--theme-gold);
     text-decoration: none;
 }
-p { 
-    font-weight: lighter;
-}
-body {
-    margin: 0 2vh 0 2vh;
-}
-
-/* header/sidebar styles */
-.sidebar {
-    position: fixed;
-    margin-top: 4vh;
-    right: 0; 
-    padding: 3vh;
-}
-.sidebar h1 {
-    line-height: 1.2;
+h1 {
+    color: var(--theme-red);
+    font-size: 20vh;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding: 0;
 }
 header {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Sora', sans-serif;
+    white-space: nowrap;
+    margin: -8vh 0 0 -4vh;
 }
-.avatar {
-    max-width: 28vh;
-    align-self: center;
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
-header ul {
-    display: block;
-    line-height: 1.75;
+
+/* header and nav styles */
+.double {
+    margin-top: -11vh;
+}
+
+.mobile-description {
+    display: none;
+}
+
+.nav-wrapper {
+    padding-top: 5vh;
+}
+
+.topnav {
+    display: none;
 }
 nav {
-    align-self: center;
+    padding-top: 6vh;
+    display: block;
+    direction: column;
 }
 .nav-list {
-    list-style-type: none;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 .nav-list li {
     border-radius: 1vh;
-    border: 1px solid var(--off-white);
-    opacity: 50%;
-    padding: .5vh .5vh .5vh 3vh;
-    text-align: left;
-    margin-bottom: 1vh;
+    border: 3px solid var(--theme-red);
+    background-color: var(--theme-red);
+    padding: .5vh;
+    text-align: center;
+    margin:0 1vh 1vh 0;
     width: 25vh;
+    letter-spacing: .75vh;
 }
 .nav-list li:hover {
-    font-style: italic;
     opacity: 100%;
-    background-color: #000;
-    color: #fff;
+    border: 2px solid var(--theme-red);
+    background-color: #fff;
 }
 .nav-list a {
-    color: #000;
-}
-.nav-list li:hover a {
     color: #fff;
 }
-nav {
-    display: flex;
-    flex-direction: column;
-}
-h1 {
-    font-size: 5vh;
-    padding: 0;
-    font-family: 'Libre Barcode 39 Extended Text', sans-serif;
-}
-
-.intro p {
-    font-style: italic;
-    font-size: 2vh;
-    opacity: 75%;
-    text-align: right;
-    padding-right: 2vh;
-}
-.surname {
-    color: var(--theme-shadow);
-    font-style: bold;
-    font-size: 4.5vh;
-    letter-spacing: 1.5vh;
-    padding-left: 2vh;
-}
-
-/* sections styles */
-
-.main-content {
-    text-align: center;
-    position: relative;
-    margin-left: 3vh;
-}
-.border-placeholder-div {
-    width: 115vh;
-    height:10vh;
-    border-bottom: 3px solid var(--off-white);
-    border-right: 3px solid var(--off-white);
-}
-h2{
-    text-align: left;
+.nav-list a:hover {
     color: var(--theme-red);
-    font-size: 5vh;
-    font-family: 'Libre Barcode 39 Extended Text';
-    padding: 1vh 0 2vh 2vh ;
-    opacity: 50%;
 }
-.caption {
-    font-size: 2vh;
-    /* transform: translateY(-2.8vh); */
-    background-color: rgba(255,255,255, .85);
+.nav-btn {
+    color: #fff;
+    font-size: 2.5vh;
+    letter-spacing: 1vh;
 }
-.main-content-wrapper {
-    width: 90%;
-}
-
-/* work section styles */
-
-.worksection {
-    display: flex;
-    flex-direction: column;
-    padding:0 2vh 8vh 0;
-}
-.worksection article {
-    padding: 1vh;
-    width: 25vh;
-    margin: 1vh;
-    align-self: center;
-}
-.work {
-    width: 100%;
-    opacity: 50%;
-}
-
-.worksectioncontainer {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10vh;
-    text-align: center;
-    justify-content: center;
-}
-
-.work:hover {
+.nav-btn:hover {
+    color: var(--theme-red);
     opacity: 100%;
-}
-
-.hero {
-    flex-grow: 2;
+    background-color: #fff;
 }
 
 
-
-/* later section headings */
-
-.about p {
-    color: #000;
-    padding: 5vh 0;
-    font-size: .75em;
+/* main styles */
+main {
+    border-radius: 3vh;
+    width: 73.5vh;
+}
+.mock-browser {
+    border-radius: 3vh;
+    width: 65vh;
+    height: 35.5vh;
 }
 
-
-/* contact section */
-.contact {
-    height: auto;
-    width: 90%;
+.main-wrapper {
+    margin: 10vh -13vh 0 -2vh;
+    display: flex;
+    overflow: hidden;
 }
-.contact-form h2 {
-    color: rgb(182, 94, 67);
-    font-weight: lighter;
+.frame {
+    display: flex;
+    font-size: 3vh;
+    padding: 1vh 0 0 3vh;
+    border: 2px var(--theme-red) solid;
+    border-radius: 2vh 2vh 0 0;
+    background-color: var(--theme-red);
+    color: #fff;
+    height: 4vh;
+    letter-spacing: 1vh;
+}
+.blank {
+    font-size: 2vh;
+    background-color: #fff;
+    color: var(--theme-gold);
+    min-width: 60%;
+    height: 3vh;
+    border-radius: 2vh;
+    padding-left: 4vh;
+    margin-left: 3vh;
+    align-items: center;
+    text-align: left;
+}
+.content-wrapper {
+    border: 2px var(--theme-red) solid;
+    min-height: 39.5vh;
+    max-height: 39.5vh;
+    width: 66.7vh;
+    text-align: center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url("images/weather-dashboard.JPEG"); */
+}
+.text-content {
+    padding: 6vh 2vh 0 2vh;
+    color: var(--theme-blue);
+}
+h2 {
+    font-size: 7vh;
+}
+.content-dbl {
+    border: 2px var(--theme-red) solid;
+    min-height: 39.5vh;
+    text-align: center;
+    background-color: var(--theme-red);
 }
 
+.buttons {
+    text-align: center;
+    font-size: 3vh;
+    color: var(--theme-blue);
+}
 
-/* footer styles */
-  .theend ul{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-  }
+.forward {
+    border: none;
+    background-color: #fff;
+    color: var(--theme-red);
+}
+
+footer {
+    display: none;
+}
 
 /* MEDIA QUERY FOR SCREENS LESS 1000px */
 @media screen and (max-width: 1000px) {
-    .sidebar{
-         padding: 6vh 6vh 0 0 ;
-     } 
-    .border-placeholder-div {
-        width: 100vh;
-    }
- }
-/* MEDIA QUERY FOR SCREENS LESS 1000px */
-@media screen and (max-width: 880px) {
-    .border-placeholder-div {
-        width: 60vh;
-    }
     h1 {
-        font-size: 3.5vh;
+        font-size: 20vh;
     }
- }
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 600px) {
-    body {
-        margin: 0;
-    }
-    h1 {
-        font-size: 36px;
-    }
-    header {
-        width: 100%;
-    }
-    .sidebar {
-        position: relative;
-        width: auto;
-        padding: 0;
-    }
-    .surname {
-        padding-left: 1.5vh;
-    }
-    .avatar {
-        max-width: 25vh;
-    }
-    .intro p {
-        padding-right: 8vh;
-    }
-    .border-placeholder-div {
-        width: 40vh;
-    }
-    .worksection article {
-        width: 60vh;
+    nav {
+        padding-top: 2vh;
     }
 }
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    * {
+        font-size: 2vh;
+        list-style: none;
+        color: var(--theme-blue);
+    }
+    a {
+        color: var(--theme-blue);
+    }
+    h1 {
+        font-size: 6.5vh;
+    }
+    header {
+        margin: -2vh 0 0 -2vh;
+    }
+    .description {
+        display: none;
+    }
+    nav {
+        display: none;
+    } 
+    .topnav-bleed {
+        background-color: var(--theme-red);
+        margin: -1vh 0 0 0;
+        padding: 0;
+    }
+    .topnav {
+        display:block;
+        text-align: right;
+        margin: 1vh 1vh .5vh 1vh;
+        padding-bottom: .5vh;
+    }
+    .hamburger-links {
+        padding: 0 0 1vh 30vh;
+        list-style-position: inside;
+        width: min-content;
+        z-index: -1;
+        display: none;
+    }
+    .hamburger-links li:hover {
+        background-color: #c4bbb1;
+    }
+    .topnav:active .hamburger-links {
+        display: block;
+    }
+    .double {
+        margin-top: -4vh;
+    }
+    .main-wrapper {
+        display: block;
+        margin: 0;
+    }
+    main {
+        margin: 10vh 1vh 6vh 1vh;
+        width: 90%;
+    }
+    .content-wrapper {
+        width: 99%;
+    }
+    .mock-browser {
+        display: none;
+    }
+    .blank {
+        min-width: 40%;
+    }
+    footer {
+        margin-top: 13vh;
+        display: block;
+    }
+    footer ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
 /* REACH OUT STYLES END */
