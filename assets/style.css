@@ -1,10 +1,9 @@
 :root {
 
+    --theme: #6f1243;
     --theme-red: #9e2a2b;
-    --theme-shadow: #540b0e;
-    --theme-gold: #e09f3e;
-    --theme-blue: #fff;
-    --off-white: #ebe6e1;
+    --theme-gold: #df8954;
+    
 
 }
 * {
@@ -14,12 +13,14 @@
     font-family:  sans-serif, Helvetica, Arial, sans-serif;
     list-style: none;
 }
-
+body {
+    background-color: var(--theme-gold);
+}
 a {
     text-decoration: none;
 }
 h1 {
-    color: var(--theme-red);
+    color: var(--theme);
     font-size: 20vh;
     text-align: center;
     padding: 0;
@@ -46,10 +47,6 @@ button {
     margin-top: -11vh;
 }
 
-.mobile-description {
-    display: none;
-}
-
 .nav-wrapper {
     padding-top: 5vh;
 }
@@ -59,7 +56,7 @@ button {
 }
 nav {
     padding-top: 6vh;
-    display: block;
+    display: none;
     direction: column;
 }
 .nav-list {
@@ -68,8 +65,8 @@ nav {
 }
 .nav-list li {
     border-radius: 1vh;
-    border: 3px solid var(--theme-red);
-    background-color: var(--theme-red);
+    border: 3px solid var(--theme);
+    background-color: var(--theme);
     padding: .5vh;
     text-align: center;
     margin:0 1vh 1vh 0;
@@ -78,26 +75,38 @@ nav {
 }
 .nav-list li:hover {
     opacity: 100%;
-    border: 2px solid var(--theme-red);
-    background-color: #fff;
+    border: 2px solid var(--theme);
+    background-color: var(--theme-gold);
 }
 .nav-list a {
-    color: #fff;
+    color: var(--theme-gold);
 }
 .nav-list a:hover {
-    color: var(--theme-red);
+    color: var(--theme);
 }
 .nav-btn {
-    color: #fff;
+    color: var(--theme-gold);
     font-size: 2.5vh;
     letter-spacing: 1vh;
 }
 .nav-btn:hover {
-    color: var(--theme-red);
+    color: var(--theme);
     opacity: 100%;
-    background-color: #fff;
+    background-color: var(--theme-gold);
 }
+#menu-btn {
 
+    color: var(--theme-gold);
+    font-size: 2.5vh;
+    letter-spacing: 1vh;
+    border-radius: 1vh;
+    border: 3px solid var(--theme);
+    background-color: var(--theme);
+    padding: .5vh;
+    margin-top: 5vh;
+    text-align: center;
+    letter-spacing: .75vh;
+}
 
 /* main styles */
 main {
@@ -121,17 +130,17 @@ main {
     display: flex;
     font-size: 3vh;
     padding: 1vh 0 0 3vh;
-    border: 2px var(--theme-red) solid;
+    border: 2px var(--theme) solid;
     border-radius: 2vh 2vh 0 0;
-    background-color: var(--theme-red);
-    color: #fff;
+    background-color: var(--theme);
+    color: var(--theme-gold);
     height: 4vh;
     letter-spacing: 1vh;
 }
 .blank {
     font-size: 2vh;
-    background-color: #fff;
-    color: var(--theme-red);
+    background-color: var(--theme-gold);
+    color: var(--theme);
     min-width: 60%;
     height: 3vh;
     border-radius: 2vh;
@@ -150,39 +159,39 @@ main {
 }
 
 .content {
-    border: 2px solid var(--theme-red);
+    border: 3px solid var(--theme);
     height: 31vh;
 }
 .img-content {
     width: 70.3vh;
-    height: 38.3vh;
-    border: 2px solid var(--theme-red);
+    height: 38.4vh;
+    border: 3px solid var(--theme);
 }
 .text-content {
     padding: 6vh 2vh 0 2vh;
-    color: var(--theme-red);
+    color: var(--theme);
     text-align: center;
 }
 h2 {
     font-size: 7vh;
 }
 .content-dbl {
-    border: 2px var(--theme-red) solid;
+    border: 2px var(--theme) solid;
     min-height: 39.5vh;
     text-align: center;
-    background-color: var(--theme-red);
+    background-color: var(--theme);
 }
 
 .buttons {
     display: block;
     text-align: center;
     font-size: 3vh;
-    color: #fff;
+    color: var(--theme-gold);
 }
 
 .forward {
     border: none;
-    color: var(--theme-red);
+    color: var(--theme);
 }
 
 footer {
@@ -205,10 +214,10 @@ footer {
         list-style: none;
     }
     a {
-        color: var(--theme-red);
+        color: var(--theme);
     }
     .topnav a {
-        color: #fff;
+        color: var(--theme-gold);
     }
     h1 {
         font-size: 6.5vh;
@@ -216,14 +225,14 @@ footer {
     header {
         margin: -2vh 0 0 -2vh;
     }
-    .description {
+    #menu-btn {
         display: none;
     }
     nav {
         display: none;
     } 
     .topnav-bleed {
-        background-color: var(--theme-red);
+        background-color: var(--theme);
         margin: -1vh 0 0 0;
         padding: 0;
     }

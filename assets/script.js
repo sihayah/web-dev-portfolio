@@ -3,12 +3,13 @@ const forwardBtn = document.querySelector('.forward');
 const workBtn = document.querySelector('#work-btn');
 const aboutBtn = document.querySelector('#about-btn');
 const contactBtn = document.querySelector('#contact-btn');
+const menuBtn = document.querySelector('#menu-btn');
+const nav = document.querySelector('nav');
 
 const imgArr = ["assets/images/coding-quiz.jpg", "assets/images/taskmaster.JPEG", "assets/images/weather-dashboard.JPEG", "assets/images/chaos-ritual.JPEG"];
 
 // About me content
 const generateAbout = function() {
-    content.style.background = "#ffffff";
     content.classList = "content text-content";
     content.innerHTML = `
     <h2>Hello there,</h2><br><p>I'm a full-stack web developer with a background in art & design. I am based out of Brooklyn, and I'm currently seeking out my next endeavor.</p>
@@ -60,8 +61,11 @@ aboutBtn.addEventListener('click', function() {
 contactBtn.addEventListener('click', function() {
     content.classList = "";
     content.innerHTML = "";
-    console.log('wwooo')
     generateContact();
+});
+menuBtn.addEventListener('click', function() {
+    menuBtn.style.display = "none";
+    nav.style.display = "block";
 });
 
 
