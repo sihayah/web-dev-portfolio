@@ -4,7 +4,7 @@ const workBtn = document.querySelector('#work-btn');
 const aboutBtn = document.querySelector('#about-btn');
 const contactBtn = document.querySelector('#contact-btn');
 
-const imgArr = ["assets/images/code-quiz.JPEG", "assets/images/taskmaster.JPEG", "assets/images/weather-dashboard.JPEG", "assets/images/chaos-ritual.JPEG"];
+const imgArr = ["assets/images/coding-quiz.jpg", "assets/images/taskmaster.JPEG", "assets/images/weather-dashboard.JPEG", "assets/images/chaos-ritual.JPEG"];
 
 // About me content
 const generateAbout = function() {
@@ -16,7 +16,7 @@ const generateAbout = function() {
 }
 // Contact content
 const generateContact = function() {
-    content.style.background = "#ffffff";
+    content.style.backgroundImg = "";
     content.classList = "content text-content";
     content.innerHTML = `
     <p>email: sihaya_a@hotmail.com</p>
@@ -32,9 +32,10 @@ const nextItem = function () {
         nextItem();
     } else {
     ++itemNum; 
-    content.style.height = "39.5vh";
-    content.style.background = "#ffffff url('" + imgArr[itemNum] + "') no-repeat center";
-    content.style.backgroundSize = "65.7vh 36vh";
+    const imgContent = document.createElement("img");
+    imgContent.classList = "img-content";
+    imgContent.src = imgArr[itemNum];
+    content.append(imgContent);
     }
 };
 
@@ -59,6 +60,7 @@ aboutBtn.addEventListener('click', function() {
 contactBtn.addEventListener('click', function() {
     content.classList = "";
     content.innerHTML = "";
+    console.log('wwooo')
     generateContact();
 });
 
