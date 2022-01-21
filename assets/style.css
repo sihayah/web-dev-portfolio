@@ -1,8 +1,8 @@
 :root {
 
-    --theme: #6f1243;
-    --theme-red: #9e2a2b;
+    --theme: #9e2a2b;
     --theme-gold: #df8954;
+    --theme-light: #df5454;
     
 
 }
@@ -13,25 +13,26 @@
     font-family:  sans-serif, Helvetica, Arial, sans-serif;
     list-style: none;
 }
-body {
-    background-color: var(--theme-gold);
-}
+
 a {
     text-decoration: none;
 }
+
 h1 {
     color: var(--theme);
-    font-size: 20vh;
+    font-size: 30vh;
     text-align: center;
     padding: 0;
     margin: 0;
     padding: 0;
 }
+
 header {
     font-family: 'Sora', sans-serif;
     white-space: nowrap;
     margin: -8vh 0 0 -4vh;
 }
+
 button {
     background: none;
     color: inherit;
@@ -43,6 +44,7 @@ button {
 }
 
 /* header and nav styles */
+
 .double {
     margin-top: -11vh;
 }
@@ -54,15 +56,19 @@ button {
 .topnav {
     display: none;
 }
+
 nav {
-    padding-top: 6vh;
+    padding-top: 4vh;
     display: none;
     direction: column;
 }
+
 .nav-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .nav-list li {
     border-radius: 1vh;
     border: 3px solid var(--theme);
@@ -73,30 +79,35 @@ nav {
     width: 25vh;
     letter-spacing: .75vh;
 }
+
 .nav-list li:hover {
     opacity: 100%;
     border: 2px solid var(--theme);
-    background-color: var(--theme-gold);
 }
+
 .nav-list a {
-    color: var(--theme-gold);
+    color: #fff;
 }
+
 .nav-list a:hover {
     color: var(--theme);
 }
+
 .nav-btn {
-    color: var(--theme-gold);
+    color: #fff;
     font-size: 2.5vh;
     letter-spacing: 1vh;
 }
+
 .nav-btn:hover {
     color: var(--theme);
     opacity: 100%;
-    background-color: var(--theme-gold);
+    background-color: #fff;
 }
+
 #menu-btn {
 
-    color: var(--theme-gold);
+    color: #fff;
     font-size: 2.5vh;
     letter-spacing: 1vh;
     border-radius: 1vh;
@@ -112,20 +123,27 @@ nav {
 main {
     width: 73.5vh;
     padding-bottom: 5vh;
-}
-.mock-browser {
-    border-radius: 3vh;
-    width: 65vh;
-    height: 35.5vh;
-    display: none;
+    align-self: center;
 }
 
 .main-wrapper {
-    margin-top: 10vh;
     display: flex;
-    overflow: hidden;
-    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
 }
+
+.content-wrapper {
+    min-height: 39.5vh;
+    max-height: 39.5vh;
+    width: 71vh;
+    border-radius: 2vh 2vh 0 0;
+}
+
+.content {
+    border: 3px solid var(--theme);
+    height: 31vh;
+}
+
 .frame {
     display: flex;
     font-size: 3vh;
@@ -133,13 +151,14 @@ main {
     border: 2px var(--theme) solid;
     border-radius: 2vh 2vh 0 0;
     background-color: var(--theme);
-    color: var(--theme-gold);
+    color: #fff;
     height: 4vh;
     letter-spacing: 1vh;
 }
+
 .blank {
     font-size: 2vh;
-    background-color: var(--theme-gold);
+    background-color: #fff;
     color: var(--theme);
     min-width: 60%;
     height: 3vh;
@@ -149,44 +168,51 @@ main {
     align-items: center;
     text-align: left;
 }
-.content-wrapper {
-    min-height: 39.5vh;
-    max-height: 39.5vh;
-    width: 71vh;
-    border-radius: 2vh 2vh 0 0;
 
-    /* background-image: url("images/weather-dashboard.JPEG"); */
-}
-
-.content {
-    border: 3px solid var(--theme);
-    height: 31vh;
-}
 .img-content {
     width: 70.3vh;
-    height: 38.4vh;
+    height: 38.3vh;
     border: 3px solid var(--theme);
 }
+
 .text-content {
     padding: 6vh 2vh 0 2vh;
     color: var(--theme);
+}
+
+.email-content {
+    transform: translateY(6vh);
     text-align: center;
 }
+
+#section-title {
+    align-self: center;
+    margin: 2vh;    
+}
+
+.title-link {
+color: var(--theme-gold);
+text-decoration: underline;
+padding: 1vh; 
+}
+
+.title-link:hover {
+    color: var(--theme-light);
+}
+
+.title-link:active {
+    color: red;
+}
+
 h2 {
     font-size: 7vh;
-}
-.content-dbl {
-    border: 2px var(--theme) solid;
-    min-height: 39.5vh;
-    text-align: center;
-    background-color: var(--theme);
 }
 
 .buttons {
     display: block;
     text-align: center;
     font-size: 3vh;
-    color: var(--theme-gold);
+    color: #fff;
 }
 
 .forward {
@@ -204,8 +230,12 @@ footer {
         font-size: 20vh;
     }
     nav {
-        padding-top: 6vh;
+        padding-top: 2vh;
     }
+    .main-wrapper {
+        margin-top: 3vh;
+    }
+}
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
@@ -213,17 +243,21 @@ footer {
         font-size: 2vh;
         list-style: none;
     }
+    body {
+        width: 95%;
+    }
     a {
         color: var(--theme);
     }
     .topnav a {
-        color: var(--theme-gold);
+        color: #fff;
     }
     h1 {
-        font-size: 6.5vh;
+        font-size: 5.5vh;
     }
     header {
-        margin: -2vh 0 0 -2vh;
+        margin: -2vh 0 0 -2vh; 
+        padding: 0;
     }
     #menu-btn {
         display: none;
@@ -239,7 +273,7 @@ footer {
     .topnav {
         display:block;
         text-align: right;
-        margin: 1vh 1vh .5vh 1vh;
+        margin: 1vh 1.5vh .5vh 1vh;
         padding-bottom: .5vh;
         letter-spacing: .5vh;
     }
@@ -253,33 +287,41 @@ footer {
     .hamburger-links li:hover {
         background-color: #c4bbb1;
     }
+    .topnav ul {
+        transform: translateX(-4vh);
+    }
     .topnav:active .hamburger-links {
         display: block;
     }
     .double {
-        margin-top: -4vh;
+        margin-top: -3vh;
     }
     .main-wrapper {
-        display: block;
+        display: flex;
         margin: 0;
+        transform: scale(.85);
     }
     main {
-        margin: 10vh 0 0 1vh;
+        margin-top: 14vh;
+        padding-bottom: 0;
         width: 44vh;
     }
     .content-wrapper {
-        width: 44vh;
+        width: 44.25vh;
     }
     .content {
         background-size: 52.56vh 28.8vh;
+        max-height: 26vh;
     }
     .img-content {
         height: 25vh;
         width: 43.5vh;
     }
-    .mock-browser {
-        display: none;
+
+    #section-title {
+        margin: 0;
     }
+
     .blank {
         min-width: 40%;
     }
@@ -292,5 +334,3 @@ footer {
         justify-content: space-evenly;
     }
 }
-
-/* REACH OUT STYLES END */

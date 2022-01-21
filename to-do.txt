@@ -1,0 +1,31 @@
+- refactor css to mobile-first
+- make resume pdf downloadable from menu
+- display project titles
+- link deployments
+- link repos
+- use set timeout to create more dynamic intro to page
+
+...
+- polish gitHub (profile-pic, bio, location, email, link to portfolio site)
+
+-create resume (projects and apps with descriptions)
+- add AJAX to resume 
+(Your name, phone number, professional email address (not Hotmail, Yahoo, AOL, or a school address), city, state, zip code, and written-out hyperlinks to LinkedIn, GitHub, and your portfolio
+
+A technical skills section that conforms to standard spelling and style for programming languages and technologies
+
+Brief descriptions of three of your strongest projects, including languages used and written URLs to the GitHub repos and deployed projects
+
+Your professional experience in reverse chronological order, listing job title, job description, company name, city and state, and dates of employment
+
+Boot camp listed as the most recent item in education, under "Certificate")
+
+- add projects with screenshots and descriptions to accomplishments in linkedIn
+
+- create daily to-dos for skill building/reenforcing...
+
+- look up interesting companies on linkedin to connect to (exp. digital ocean)
+
+- study algorithms for technical interviews
+
+- update ALL readmes for apps connected to portfolio site

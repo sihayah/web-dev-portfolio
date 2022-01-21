@@ -1,0 +1,20 @@
+{
+  "name": "web-dev-portfolio",
+  "version": "1.0.0",
+  "description": "This is the beginning layout of my web development portfolio, including images/links for a few initial projects.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sihayah/web-dev-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sihayah/web-dev-portfolio/issues"
+  },
+  "homepage": "https://github.com/sihayah/web-dev-portfolio#readme"
+}
