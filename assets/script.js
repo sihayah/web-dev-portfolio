@@ -47,7 +47,7 @@ const generateAbout = function() {
     titleLink.href = "";
     content.classList = "content text-content";
     content.innerHTML = `
-    <h2>Hello there,</h2><br><p>I'm a dynamic full-stack web developer with a background in art & design. I am based out of Brooklyn, and I'm currently seeking out my next endeavor.</p>
+    <h2>Hello there,</h2><br><p>I'm Sihaya Harris, a dynamic full-stack web developer with a background in art & design. I am based out of Brooklyn, and I'm currently seeking out my next endeavor.</p>
     `;
 }
 // Contact content
